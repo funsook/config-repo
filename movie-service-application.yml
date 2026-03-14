@@ -1,8 +1,6 @@
 spring:
   application:
-    name: Movie-Service
-  config:
-    import: optional:configserver:http://localhost:8888
+    name: movie-service-application
 
 server:
   port: 8081
