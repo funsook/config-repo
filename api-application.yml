@@ -10,12 +10,12 @@ spring:
         webflux:
           routes:
             - id: movie-service
-              uri: lb://MOVIE-SERVICE
+              uri: lb://MOVIE-SERVICE-APPLICATION
               predicates:
                 - Path=/movies/**
 
             - id: booking-service
-              uri: lb://BOOKING-SERVICE
+              uri: lb://BOOKING-SERVICE-APPLICATION
               predicates:
                 - Path=/bookings/**
 
